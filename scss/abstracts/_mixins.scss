@@ -1,0 +1,92 @@
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin heading-xl {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 0.92;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 4.375rem;
+    line-height: 1;
+  }
+
+  @include desktop {
+    font-size: 6rem;
+    line-height: 88px;
+  }
+}
+
+@mixin heading-l {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 3.125rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 3.4375rem;
+    line-height: 1;
+  }
+
+  @include desktop {
+    font-size: 4.375rem;
+    line-height: 70px;
+  }
+}
+
+@mixin heading-m {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 3.125rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 3.75rem;
+    line-height: 50px;
+  }
+}
+
+@mixin heading-s {
+  font-family: $font-heading;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+@mixin body-m {
+  font-family: $font-body;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 28px;
+
+  @include desktop {
+    font-size: 1.375rem;
+    line-height: 32px;
+  }
+}
+
+@mixin body-s {
+  font-family: $font-body;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.625;
+
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
+}

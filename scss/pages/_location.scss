@@ -1,0 +1,104 @@
+.map {
+  position: relative;
+
+  picture img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__marker {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    z-index: 1;
+    display: grid;
+    width: 66px;
+    height: 54px;
+    place-items: center;
+    background: $black;
+    transform: translateX(-50%);
+    pointer-events: none;
+
+    &::after {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: 50%;
+      border-top: 30px solid $black;
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+      content: "";
+      transform: translateX(-50%);
+    }
+
+    &-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: $gold;
+    }
+  }
+
+  @include tablet {
+    picture img {
+      height: 600px;
+    }
+  }
+
+  @include desktop {
+    picture img {
+      height: 600px;
+      object-position: center 45%;
+    }
+  }
+}
+
+.location {
+  background: $black;
+  color: $white;
+  padding: 48px $side-mobile 56px;
+
+  &__title {
+    @include heading-l;
+    margin-bottom: 3rem;
+  }
+
+  &__street {
+    color: $gold;
+    @include heading-s;
+    margin-bottom: 1.25rem;
+  }
+
+  &__address {
+    @include body-m;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    @include body-m;
+    max-width: 40ch;
+  }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    padding: 88px $side-tablet 80px;
+    align-items: start;
+
+    &__title {
+      margin-bottom: 0;
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    padding: 104px 165px 128px;
+    gap: 80px;
+
+    &__title {
+      max-width: 8ch;
+    }
+  }
+}

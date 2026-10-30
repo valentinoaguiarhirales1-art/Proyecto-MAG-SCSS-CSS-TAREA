@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Logs and OS
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Sass cache / source maps (optional local)
+.sass-cache/
+*.css.map
+
+# Local design dumps (not part of the site)
+_design-preview/
+_extracted/
+*.pdf

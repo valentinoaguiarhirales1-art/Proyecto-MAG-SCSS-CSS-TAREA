@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 48px $side-mobile;
+
+  &__brand {
+    font-family: $font-heading;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include body-s;
+    max-width: 36ch;
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    a {
+      display: grid;
+      place-items: center;
+      transition: transform 0.2s ease, filter 0.2s ease;
+
+      &:hover,
+      &:focus-visible {
+        transform: translateY(-2px);
+      }
+
+      &:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &--dark {
+    background: $black;
+    color: $white;
+
+    .footer__social a:hover img,
+    .footer__social a:focus-visible img {
+      filter: invert(27%) sepia(40%) saturate(800%) hue-rotate(346deg) brightness(95%) contrast(90%);
+    }
+  }
+
+  &--gold {
+    background: $gold;
+    color: $black;
+
+    .footer__social a:hover img,
+    .footer__social a:focus-visible img {
+      filter: brightness(0);
+    }
+  }
+
+  @include tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 56px $side-tablet;
+
+    &__text {
+      flex: 1;
+      max-width: 28rem;
+    }
+  }
+
+  @include desktop {
+    padding: 80px 165px;
+    gap: 80px;
+  }
+}

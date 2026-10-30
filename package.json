@@ -1,0 +1,13 @@
+{
+  "name": "modern-art-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini-site responsive de Modern Art Gallery — Tarea entregable 3 de CSS",
+  "scripts": {
+    "sass": "sass scss/main.scss css/styles.css --watch --style=expanded",
+    "build": "sass scss/main.scss css/styles.css --style=expanded --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
