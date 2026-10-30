@@ -1,16 +1,16 @@
-# 🎨 Proyecto-MAG-SCSS-CSS-TAREA
+# *🎨✨ Proyecto-MAG-SCSS-CSS-TAREA*
 > ✨ *Tarea de Conquer Blocks, SCSS-CSS, **terminada con mucho éxito**!!*
 
 Mini-sitio de **dos vistas** (Home y Location) para la galería ficticia **Modern Art Gallery**, maquetado **mobile first** con HTML semántico y SASS, siguiendo fielmente el PDF de la *Tarea entregable 3 de CSS* (versiones mobile, tablet y desktop).
 
-## 📄 Vistas
+## *📄 Vistas*
 
 | Vista | Archivo | Contenido |
 | --- | --- | --- |
 | 🏠 **Home** | `index.html` | Hero, galería "Your day at the gallery", bloque "Come & be inspired" y footer oscuro |
 | 📍 **Location** | `location.html` | Mapa de Newport con pin, botón "Back to home", dirección y footer dorado |
 
-## ✅ Requisitos cubiertos
+## *✅ Requisitos cubiertos*
 
 - ✅ **Boilerplate propio**, organizado por carpetas
 - ✅ **SASS** con parciales (`abstracts`, `base`, `layout`, `components`, `pages`)
@@ -22,13 +22,13 @@ Mini-sitio de **dos vistas** (Home y Location) para la galería ficticia **Moder
 - ✅ **Media queries** *mobile first*: `768px` (tablet) y `1200px` (desktop)
 - ✅ Imágenes con `alt` descriptivo, un único `h1` por página
 
-## 🛠️ Stack
+## *🛠️ Stack*
 
 - **HTML5**
 - **SASS / CSS3** *(Grid + Flexbox)*
 - **Google Fonts**: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display) (900) y [Outfit](https://fonts.google.com/specimen/Outfit) (300)
 
-## 🎨 Sistema de diseño
+## *🎨 Sistema de diseño*
 
 | Color | Valor |
 | --- | --- |
@@ -46,31 +46,31 @@ Mini-sitio de **dos vistas** (Home y Location) para la galería ficticia **Moder
 | Body M | Outfit Light | 22 / 32 px |
 | Body S | Outfit Light | 18 / 28 px |
 
-## 📂 Estructura
+## *📂 Estructura*
 
 ```text
 .
 ├── LICENSE
 ├── README.md
-└── Modern-Art-Gallery/
+└── 📂Modern-Art-Gallery
     ├── index.html
     ├── location.html
     ├── package.json
-    ├── css/
+    ├── 📂css
     │   └── styles.css        # CSS compilado
-    ├── scss/
+    ├── 📂scss
     │   ├── main.scss
-    │   ├── abstracts/        # variables y mixins
-    │   ├── base/             # reset
-    │   ├── components/       # botones
-    │   ├── layout/           # hero, gallery, footer
-    │   └── pages/            # location (mapa y dirección)
-    └── assets/
-        ├── icons/            # SVG
-        └── images/
+    │   ├── 📂abstracts        # variables y mixins
+    │   ├── 📂base             # reset
+    │   ├── 📂components       # botones
+    │   ├── 📂layout           # hero, gallery, footer
+    │   └── 📂pages            # location (mapa y dirección)
+    └── 📂assets
+        ├── 📂icons            # SVG
+        └── 📂images
 ```
 
-## 🚀 Uso en local
+## *🚀 Uso en local*
 
 1. Abre `Modern-Art-Gallery/index.html` en el navegador (o sirve la carpeta con `npx serve Modern-Art-Gallery`).
 2. Si quieres editar estilos, instala y compila SASS:
@@ -82,6 +82,6 @@ Mini-sitio de **dos vistas** (Home y Location) para la galería ficticia **Moder
    npm run build    # compilación única
    ```
 
-## ⚖️ Licencia
+## *⚖️ Licencia*
 
-📜 Licencia **MIT** — ver [LICENSE](./LICENSE).
+***📜 Licencia **MIT** ver [LICENSE](./LICENSE).***
