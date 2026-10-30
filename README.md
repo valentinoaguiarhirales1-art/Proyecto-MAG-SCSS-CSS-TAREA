@@ -50,31 +50,33 @@ Mini-sitio de **dos vistas** (Home y Location) para la galería ficticia **Moder
 
 ```text
 .
-├── index.html
-├── location.html
-├── package.json
-├── css/
-│   └── styles.css        # CSS compilado
-├── scss/
-│   ├── main.scss
-│   ├── abstracts/        # variables y mixins
-│   ├── base/             # reset
-│   ├── components/       # botones
-│   ├── layout/           # hero, gallery, footer
-│   └── pages/            # location (mapa y dirección)
-├── assets/
-│   ├── icons/            # SVG
-│   └── images/
 ├── LICENSE
-└── README.md
+├── README.md
+└── Modern-Art-Gallery/
+    ├── index.html
+    ├── location.html
+    ├── package.json
+    ├── css/
+    │   └── styles.css        # CSS compilado
+    ├── scss/
+    │   ├── main.scss
+    │   ├── abstracts/        # variables y mixins
+    │   ├── base/             # reset
+    │   ├── components/       # botones
+    │   ├── layout/           # hero, gallery, footer
+    │   └── pages/            # location (mapa y dirección)
+    └── assets/
+        ├── icons/            # SVG
+        └── images/
 ```
 
 ## Uso en local
 
-1. Abre `index.html` en el navegador (o sirve la carpeta con `npx serve .`).
+1. Abre `Modern-Art-Gallery/index.html` en el navegador (o sirve la carpeta con `npx serve Modern-Art-Gallery`).
 2. Si quieres editar estilos, instala y compila SASS:
 
    ```bash
+   cd Modern-Art-Gallery
    npm install
    npm run sass     # modo watch
    npm run build    # compilación única
